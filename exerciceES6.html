@@ -1,0 +1,92 @@
+=<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+//exercice1
+const prenom = prompt("Quel est votre prénom ?")
+const age = prompt("Quel est votre âge ?")
+const message = `Bonjour ${prenom}, vous avez ${age} ans.`//message personaliser
+console.log(message)
+//ex2
+const isAdult = (age) => age >= 18 ? "Majeur" : "Mineur"
+console.log(isAdult(20))
+console.log(isAdult(19))
+console.log(isAdult(18))
+console.log(isAdult(17))
+console.log(isAdult(16) )
+console.log(isAdult(15))
+console.log(isAdult(14))
+//ex3
+// Tableau d'objets représentant des étudiants avec leurs noms et notes
+const students = [
+  { name: "Alice", grade: 12 },
+  { name: "Bob", grade: 8 },
+  { name: "Charlie", grade: 15 },
+  { name: "David", grade: 9 },
+  { name: "Eve", grade: 11 }
+]
+const getPassedStudents = (students) => //function getPassedStudents
+  students.filter(student => student.grade >= 10).map(student => student.name);
+const passedStudents = getPassedStudents(students)// getPassedStudents pour obtenir les étudiants réussi
+console.log(passedStudents)  //Affichage  noms des étudiants  réussi
+const [firstPassedStudent] = passedStudents// extraire le premier étudiant  réussi
+console.log(firstPassedStudent)
+//ex4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
